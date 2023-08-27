@@ -1,0 +1,48 @@
+/* ================== BUTTONS ================== */
+
+/* Button close */
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--secondary-white-color);
+
+  line-height: 0;
+
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    border: none;
+    background-color: var(--pressed-state-color);
+}
+
+.icon-close {
+  fill: var(--primary-blue-color);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.close-btn:hover .icon-close,
+.close-btn:focus .icon-close {
+    fill: var(--white-background-color);
+}
+/* /Button close */
+
+/* ================== /BUTTONS ================== */
