@@ -1,3 +1,13 @@
+.title {
+        margin-bottom: 72px;
+
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.045em;
+        color: var(--primary-blue-color);
+    }
+
 /* Mobile */
 @media screen and (max-width: 767px) {
 
@@ -35,17 +45,6 @@
         letter-spacing: 0.025em;
         color: var(--primary-blue-color);
     }
-}
-
-.title {
-    margin-bottom: 72px;
-
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.045em;
-    text-transform: capitalize;
-    color: var(--primary-blue-color);
 }
 
 .studio-title-card {

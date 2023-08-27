@@ -5,9 +5,9 @@
 @import './base/common.css';
 @import './base/container.css';
 @import './base/section.css';
-@import './base/social-links.css';
 
 /* Component */
+@import './component/social-links.css';
 @import './component/buttons.css';
 @import './component/logotype.css';
 @import './component/title.css';
@@ -19,3 +19,4 @@
 @import './layout/studio-hero.css';
 @import './layout/studio-team.css';
 @import './layout/studio-about-us.css';
+@import './layout/studio-we-doing.css';

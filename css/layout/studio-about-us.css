@@ -3,11 +3,6 @@
 /* Mobile */
 @media screen and (max-width: 767px) {
 
-    .studio-about {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-
     .about-icon-container {
         display: none;
     }
@@ -21,11 +16,6 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-
-    .studio-about {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
 
     .studio-about-list {
         display: flex;
@@ -44,11 +34,6 @@
 
 /* Desktop */
 @media screen and (min-width: 1158px) {
-
-    .studio-about {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
     
     .about-icon-container {
         display: flex;

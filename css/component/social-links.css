@@ -1,6 +1,6 @@
 /* SOCIAL-Links */
 
-.studio-socials-list {
+.mobile-menu-content .studio-socials-list {
     display: flex;
     gap: 56px;
 
@@ -9,12 +9,26 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+    
+    .studio-socials-list {
+        display: flex;
+        gap: 24px;
+    }
+}
 
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    
+    .studio-socials-list {
+        display: flex;
+        gap: 24px;
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 1158px) {
     .studio-socials-list {
+        display: flex;
         gap: 24px;
     }
 }
@@ -50,7 +64,6 @@
 }
 
 /* Studio-team */
-
 .studio-social-icon {
     flex-shrink: 0;
 
