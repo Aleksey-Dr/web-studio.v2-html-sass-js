@@ -10,9 +10,12 @@
 /* Component */
 @import './component/buttons.css';
 @import './component/logotype.css';
+@import './component/title.css';
+@import './component/description.css';
 
 /* Layout */
 @import './layout/header.css';
 @import './layout/mobile-menu.css';
 @import './layout/studio-hero.css';
 @import './layout/studio-team.css';
+@import './layout/studio-about-us.css';
