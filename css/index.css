@@ -16,8 +16,10 @@
 /* Layout */
 @import './layout/header.css';
 @import './layout/mobile-menu.css';
+@import './layout/modal-window.css';
 @import './layout/studio-hero.css';
 @import './layout/studio-team.css';
 @import './layout/studio-about-us.css';
 @import './layout/studio-we-doing.css';
 @import './layout/studio-clients.css';
+@import './layout/footer.css';
