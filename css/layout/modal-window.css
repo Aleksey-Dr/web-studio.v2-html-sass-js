@@ -191,8 +191,15 @@
         fill 250ms var(--timing-function);
 }
 
+/* Mobile-min */
+@media screen and (max-width: 427px) {
+    .modal-window {
+        width: 290px;
+    }
+}
+
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 428px)  and (max-width: 767px) {
 
     .modal-window {
         width: 392px;
