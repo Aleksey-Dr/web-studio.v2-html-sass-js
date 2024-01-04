@@ -1,4 +1,4 @@
-/* STUDIO HERO */
+/* ================== STUDIO HERO ================== */
 /* Mobile */
 @media screen and (max-width: 767px) {
 
@@ -15,20 +15,20 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: var(--primary-blue-color);
-    }
+        background-color: $primary-blue-color;
 
-    .studio-hero-title {
-        max-width: 320px;
-        margin-right: auto;
-        margin-bottom: 72px;
-        margin-left: auto;
-        
-        text-align: center;
-        font-size: 36px;
-        line-height: calc(40 / 36);
-        letter-spacing: 0.02em;
-        color: var(--white-background-color);
+        &-title {
+            max-width: 320px;
+            margin-right: auto;
+            margin-bottom: 72px;
+            margin-left: auto;
+            
+            text-align: center;
+            font-size: 36px;
+            line-height: calc(40 / 36);
+            letter-spacing: 0.02em;
+            color: $white-background-color;
+        }
     }
 }
 
@@ -47,20 +47,20 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: var(--primary-blue-color);
-    }
+        background-color: $primary-blue-color;
 
-    .studio-hero-title {
-        max-width: 496px;
-        margin-right: auto;
-        margin-bottom: 36px;
-        margin-left: auto;
-        
-        text-align: center;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: var(--primary-letter-spacing);
-        color: var(--white-background-color);
+        &-title {
+            max-width: 496px;
+            margin-right: auto;
+            margin-bottom: 36px;
+            margin-left: auto;
+            
+            text-align: center;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: $primary-letter-spacing;
+            color: $white-background-color;
+        }
     }
 }
 
@@ -80,20 +80,20 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: var(--primary-blue-color);
-    }
+        background-color: $primary-blue-color;
 
-    .studio-hero-title {
-        max-width: 496px;
-        margin-right: auto;
-        margin-bottom: 48px;
-        margin-left: auto;
-        
-        text-align: center;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: var(--primary-letter-spacing);
-        color: var(--white-background-color);
+        &-title {
+            max-width: 496px;
+            margin-right: auto;
+            margin-bottom: 48px;
+            margin-left: auto;
+            
+            text-align: center;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: $primary-letter-spacing;
+            color: $white-background-color;
+        }
     }
 }
 
@@ -108,24 +108,24 @@
 
     border: none;
     border-radius: 4px;
-    background-color: var(--primary-brand-color);
+    background-color: $primary-brand-color;
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     
     text-align: center;
-    font-weight: var(--medium-font-weight);
+    font-weight: $medium-font-weight;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--white-background-color);
+    color: $white-background-color;
 
-    transition: background-color 250ms var(--timing-function);
-}
+    transition: background-color 250ms $timing-function;
 
-.studio-hero-btn:hover,
-.studio-hero-btn:focus {
-    background-color: var(--pressed-state-color);
+    &:hover,
+    &:focus {
+        background-color: $pressed-state-color;
 
-    transition: background-color 250ms var(--timing-function);
+        transition: background-color 250ms $timing-function;
+    }
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -163,3 +163,4 @@
             url("../../images/people-office@2x.jpg");
         }
 }
+/* ================== /STUDIO HERO ================== */

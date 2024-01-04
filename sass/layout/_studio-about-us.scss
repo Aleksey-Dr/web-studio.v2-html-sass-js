@@ -1,5 +1,4 @@
-/* STUDIO ABOUT */
-
+/* ================== STUDIO ABOUT ================== */
 /* Mobile */
 @media screen and (max-width: 767px) {
 
@@ -17,14 +16,16 @@
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 
-    .studio-about-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-    }
+    .studio-about {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 72px 24px;
+        }
 
-    .studio-about-item {
-        flex-basis: calc((100% - 24px) / 2);
+        &-item {
+            flex-basis: calc((100% - 24px) / 2);
+        }
     }
 
     .about-icon-container {
@@ -45,19 +46,22 @@
         margin-bottom: 8px;
 
         border-radius: 4px;
-        background-color: var(--text-light-color);
+        background-color: $text-light-color;
     }
 
-    .studio-about-list {
-        display: flex;
-        gap: 24px;
-    }
+    .studio-about {
+        &-list {
+            display: flex;
+            gap: 24px;
+        }
 
-    .studio-about-item {
-        flex-basis: calc((100% - 3 * 24px) / 4);
-    }
+        &-item {
+            flex-basis: calc((100% - 3 * 24px) / 4);
+        }
 
-    .studio-about-icon {
-        flex-shrink: 0;
+        &-icon {
+            flex-shrink: 0;
+        }
     }
 }
+/* ================== /STUDIO ABOUT ================== */
