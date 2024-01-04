@@ -1,4 +1,4 @@
-# [WEB STUDIO](https://aleksey-dr.github.io/goit-markup-hw-06/)
+# [WEB STUDIO](https://aleksey-dr.github.io/web-studio.v2-html-sass-js/)
 
 #### [Aleksey-Dr](https://github.com/Aleksey-Dr)
 
