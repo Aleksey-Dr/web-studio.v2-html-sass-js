@@ -1,10 +1,29 @@
-/* ================== COMMON ================== */
+/* ================== PLACEHOLDERS ================== */
+.footer-social-list, .portfolio-list, .portfolio-filter, .studio-clients-list, .studio-team-list, .studio-doing-list, .studio-about-list, .mobile-menu-navigation, .contacts-list, .menu, .studio-socials-list {
+  list-style: none;
+}
+
+/* ================== /PLACEHOLDERS ================== */
+/* ================== COLORS ================== */
+/* ================== /COLORS ================== */
+/* ================== FONT-FAMILY ================== */
+/* ================== /FONT-FAMILY ================== */
+/* ================== FONT-SIZE ================== */
+/* ================== /FONT-SIZE ================== */
+/* ================== FONT-WEIGHT ================== */
+/* ================== /FONT-WEIGHT ================== */
+/* ================== LETTER-SPACING ================== */
+/* ================== /LETTER-SPACING ================== */
+/* ================== TIMING ================== */
+/* ================== /TIMING ================== */
+/* ================== BREAKPOINTS ================== */
+/* ================== /BREAKPOINTS ================== */
 /* ================== COMMON ================== */
 /* For tegs */
 body {
-  background-color: var(--white-background-color);
-  font-family: var(--primary-font-family);
-  color: var(--text-description-color);
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
 }
 
 h1,
@@ -55,11 +74,6 @@ button {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-}
-
-/* ================== /COMMON ================== */
 /* ================== /COMMON ================== */
 /* ================== SECTION ================== */
 /* Mobile */
@@ -120,18 +134,6 @@ button {
   }
 }
 /* ================== /CONTAINER ================== */
-/* ================== COLORS ================== */
-/* ================== /COLORS ================== */
-/* ================== FONT-FAMILY ================== */
-/* ================== /FONT-FAMILY ================== */
-/* ================== FONT-SIZE ================== */
-/* ================== /FONT-SIZE ================== */
-/* ================== FONT-WEIGHT ================== */
-/* ================== /FONT-WEIGHT ================== */
-/* ================== LETTER-SPACING ================== */
-/* ================== /LETTER-SPACING ================== */
-/* ================== TIMING ================== */
-/* ================== /TIMING ================== */
 /* ================== LOGOTYPE ================== */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -365,8 +367,7 @@ button {
   background-color: #4D5AE5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-item .link:hover, .social-item .link:focus {
+.social-item .link:hover, .social-item .link:focus-visible {
   background-color: #404BBF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -391,8 +392,8 @@ button {
   }
   .header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   .burger-menu-btn {
     padding: 0;
@@ -419,8 +420,8 @@ button {
   }
   .contacts-list {
     display: flex;
-    flex-direction: column-reverse;
     gap: 40px;
+    flex-direction: column-reverse;
   }
   .contacts-item.tel {
     font-size: 26px;
@@ -448,8 +449,8 @@ button {
   }
   .header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   .burger-menu-btn {
     padding: 0;
@@ -476,8 +477,8 @@ button {
   }
   .contacts-list {
     display: flex;
-    flex-direction: column-reverse;
     gap: 40px;
+    flex-direction: column-reverse;
   }
   .contacts-item.tel {
     font-size: 36px;
@@ -546,8 +547,8 @@ button {
   }
   .contacts-list {
     display: flex;
-    flex-direction: column;
     gap: 12px;
+    flex-direction: column;
     padding: 16px 0;
   }
   .contacts-item {
@@ -670,13 +671,13 @@ button {
 .mobile-menu-content {
   display: flex;
   flex-direction: column;
-  align-items: streach;
+  align-items: stretch;
   padding: 80px 20px 40px 25px;
 }
 .mobile-menu-navigation {
   display: flex;
-  flex-direction: column;
   gap: 40px;
+  flex-direction: column;
 }
 .mobile-menu-navigation .current {
   color: #404BBF;
@@ -922,7 +923,7 @@ button {
     margin-bottom: 48px;
     margin-left: auto;
     text-align: center;
-    font-size: 56px;
+    font-size: 54px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -975,8 +976,8 @@ button {
   }
   .studio-about-list {
     display: flex;
-    flex-direction: column;
     gap: 72px;
+    flex-direction: column;
   }
 }
 /* Tablet */
@@ -1054,8 +1055,8 @@ button {
 @media screen and (max-width: 767px) {
   .studio-team-list {
     display: flex;
-    flex-direction: column;
     gap: 72px;
+    flex-direction: column;
   }
   .studio-team-card {
     width: 264px;
@@ -1188,6 +1189,87 @@ button {
   }
 }
 /* ================== /CLIENTS ================== */
+/* ================== PORTFOLIO HERO ================== */
+.portfolio-hero {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-filter {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-card {
+  flex-basis: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card-link {
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card-text {
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+  border-top: none;
+}
+
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-box::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-box:hover .overlay,
+.portfolio-box:focus .overlay,
+.portfolio-card:focus .overlay,
+.portfolio-card:focus .overlay,
+.portfolio-card-link:focus .overlay {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #4D5AE5;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #F4F4FD;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+
+/* ================== /PORTFOLIO HERO ================== */
 /* ================== FOOTER ================== */
 .footer {
   padding-top: 100px;
@@ -1199,9 +1281,9 @@ button {
 @media screen and (max-width: 767px) {
   .footer .container {
     display: flex;
+    gap: 72px;
     flex-direction: column;
     align-items: center;
-    gap: 72px;
   }
   .footer .logo {
     display: inline-block;
@@ -1238,9 +1320,9 @@ button {
   }
   .footer-form {
     display: flex;
+    gap: 16px;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
   }
   .footer-form-description {
     display: block;
@@ -1438,7 +1520,7 @@ button {
     display: flex;
     gap: 16px;
   }
-  .footer-social-link.link:hover, .footer-social-link.link:focus {
+  .footer-social-link.link:hover, .footer-social-link.link:focus-visible {
     background-color: #31D0AA;
   }
   .footer-social-icon {

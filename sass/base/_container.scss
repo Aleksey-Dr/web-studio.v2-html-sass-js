@@ -1,6 +1,6 @@
 /* ================== CONTAINER ================== */
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .container {
         max-width: 428px;
@@ -13,9 +13,9 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
     .container {
-        width: 768px;
+        width: $breakpoint-tablet-minw;
         /* Double */
         padding-right: 15px;
         padding-left: 15px;
@@ -26,9 +26,9 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
     .container {
-        width: 1158px;
+        width: $breakpoint-desktop-minw;
         /* Double */
         padding-right: 15px;
         padding-left: 15px;

@@ -170,9 +170,7 @@
     }
 
     &-span-checkbox {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        @include positionFlex($type: inline-flex);
         
         width: 16px;
         height: 16px;

@@ -1,6 +1,6 @@
 /* ================== SECTION ================== */
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .section {
         padding-top: 96px;
@@ -9,7 +9,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
     .section {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -17,7 +17,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .section {
         padding-top: 120px;

@@ -6,15 +6,18 @@
     background-color: $primary-blue-color;
 }
 
+.footer-social-list {
+    @extend %list;
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
 
     .footer {
         .container {
-            display: flex;
+            @include gapFlex(72px);
             flex-direction: column;
             align-items: center;
-            gap: 72px;
         }
 
         .logo {
@@ -50,8 +53,7 @@
             }
 
             &-list {
-                display: flex;
-                gap: 16px;
+                @include gapFlex(16px);
             }
 
             &-icon {
@@ -64,10 +66,9 @@
         }
 
         &-form {
-            display: flex;
+            @include gapFlex(16px);
             flex-direction: column;
             align-items: center;
-            gap: 16px;
 
             &-description {
                 display: block;
@@ -108,9 +109,8 @@
             }
 
             &-btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include positionFlex();
+
                 width: 165px;
                 height: 40px;
                 padding: 8px 24px;
@@ -145,7 +145,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
 
     .footer {
         .container {
@@ -183,8 +183,7 @@
             }
 
             &-list {
-                display: flex;
-                gap: 16px;
+                @include gapFlex(16px);
             }
 
             &-icon {
@@ -197,8 +196,7 @@
         }
 
         &-form {
-            display: flex;
-            gap: 24px;
+            @include gapFlex(24px);
 
             &-description {
                 display: block;
@@ -237,9 +235,8 @@
             }
 
             &-btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include positionFlex();
+
                 min-width: 165px;
                 height: 40px;
                 padding: 8px 24px;
@@ -266,7 +263,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .footer {
         .container {
@@ -309,14 +306,13 @@
             }
 
             &-list {
-                display: flex;
-                gap: 16px;
+                @include gapFlex(16px);
             }
 
             &-link {
                 &.link {
                     &:hover,
-                    &:focus {
+                    &:focus-visible {
                         background-color: $success-messages-color;
                     }
                 }
@@ -332,8 +328,7 @@
         }
 
         &-form {
-            display: flex;
-            gap: 24px;
+            @include gapFlex(24px);
 
             &-description {
                 display: block;
@@ -372,9 +367,8 @@
             }
 
             &-btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include positionFlex();
+
                 min-width: 165px;
                 height: 40px;
                 padding: 8px 24px;

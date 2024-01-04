@@ -1,0 +1,10 @@
+@mixin positionFlex($type: flex, $position: center) {
+    display: $type;
+    justify-content: $position;
+    align-items: center;
+}
+
+@mixin gapFlex($value) {
+    display: flex;
+    gap: $value;
+}

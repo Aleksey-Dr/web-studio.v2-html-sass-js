@@ -15,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -26,7 +25,7 @@
           <a class="logo link" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
-          <ul class="menu list">
+          <ul class="menu">
             <li>
               <a class="menu-link link" href="./index.html">Studio</a>
             </li>
@@ -49,10 +48,12 @@
           </svg>
         </button>
         <address class="contacts">
-          <ul class="contacts-list list">
+          <ul class="contacts-list">
             <li>
-              <a class="contacts-item link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-item link"
+              >info@devstudio.com</a
               >
             </li>
             <li>
@@ -72,12 +73,12 @@
       <section class="portfolio-hero">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="portfolio-filter list">
+          <ul class="portfolio-filter">
             <li>
               <button class="btn" type="button">All</button>
             </li>
             <li>
-              <button class="btn type="button"">Web Site</button>
+              <button class="btn" type="button">Web Site</button>
             </li>
             <li>
               <button class="btn" type="button">App</button>
@@ -91,10 +92,10 @@
           </ul>
 
           <!-- <h2>Portfolio cards</h2> -->
-          <ul class="portfolio-list list">
+          <ul class="portfolio-list">
             <!-- 1 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/banking.jpg 1x,
@@ -116,7 +117,7 @@
             </li>
             <!-- 2 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/cashless-payment.jpg 1x,
@@ -138,7 +139,7 @@
             </li>
             <!-- 3 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/meditation-app.jpg 1x,
@@ -160,7 +161,7 @@
             </li>
             <!-- 4 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/taxi-service.jpg 1x,
@@ -182,7 +183,7 @@
             </li>
             <!-- 5 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/screen-illustrations.jpg 1x,
@@ -204,7 +205,7 @@
             </li>
             <!-- 6 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                <div class="portfolio-box">
                  <img
                   srcset="./images/online-courses.jpg 1x,
@@ -226,7 +227,7 @@
             </li>
             <!-- 7 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/instagram-stories-concept.jpg 1x,
@@ -248,7 +249,7 @@
             </li>
             <!-- 8 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/organic-food.jpg 1x,
@@ -270,7 +271,7 @@
             </li>
             <!-- 9 -->
             <li class="portfolio-card">
-              <a class="portfolio-card-link link" href="#">
+              <a href="#" class="portfolio-card-link link">
                 <div class="portfolio-box">
                   <img
                     srcset="./images/fresh-coffee.jpg 1x,
@@ -309,9 +310,13 @@
         </div>
         <div class="footer-block-social">
           <p class="footer-social-common">Social media</p>
-          <ul class="footer-social-list list">
+          <ul class="footer-social-list">
             <li class="social-item">
-              <a href="" class="footer-social-link link">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-link link"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -321,7 +326,11 @@
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="footer-social-link link">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-social-link link"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -331,7 +340,11 @@
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="footer-social-link link">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-social-link link"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -341,7 +354,11 @@
               </a>
             </li>
             <li class="social-item">
-              <a class="footer-social-link link" href="">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer-social-link link"
+              >
                 <svg
                   class="footer-social-icon"
                   width="24"
@@ -389,7 +406,7 @@
         </button>
         <div class="mobile-menu-content">
           <nav class="navigation">
-            <ul class="mobile-menu-navigation list">
+            <ul class="mobile-menu-navigation">
               <li>
                 <a class="menu-link link" href="./index.html">Studio</a>
               </li>
@@ -397,12 +414,12 @@
                 <a class="current menu-link link" href="./portfolio.html">Portfolio</a>
               </li>
               <li>
-                <a class="menu-link link" href="#">Contacts</a>
+                <a class="menu-link link" href="./contacts.html">Contacts</a>
               </li>
             </ul>
           </nav>
           <address class="mobile-menu-contacts">
-            <ul class="contacts-list list">
+            <ul class="contacts-list">
               <li>
                 <a class="contacts-item email link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
@@ -415,30 +432,42 @@
               </li>
             </ul>
           </address>
-          <ul class="studio-socials-list list">
+          <ul class="studio-socials-list">
             <li class="social-item">
-              <a href="" class="link">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="link"
+              >
                 <svg width="24" height="24" class="studio-social-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="link">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="link"
+              >
                 <svg width="24" height="24" class="studio-social-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="link">
+              <a href="https://www.facebook.com/" class="link">
                 <svg width="24" height="24" class="studio-social-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="" class="link">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="link"
+              >
                 <svg width="24" height="24" class="studio-social-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>

@@ -3,14 +3,17 @@
     background-color: $text-light-color;
 }
 
+.studio-team-list {
+    @extend %list;
+}
+
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .studio-team {
         &-list {
-            display: flex;
+            @include gapFlex(72px);
             flex-direction: column;
-            gap: 72px;
         }
 
         &-card {
@@ -33,7 +36,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
 
     .studio-team {
         &-list {
@@ -61,12 +64,11 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .studio-team {
         &-list {
-            display: flex;
-            gap: 24px;
+            @include gapFlex(24px);
         }
 
         &-card {

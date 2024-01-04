@@ -32,3 +32,13 @@ $primary-letter-spacing: 0.02em;
 /* ================== TIMING ================== */
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /* ================== /TIMING ================== */
+
+/* ================== BREAKPOINTS ================== */
+// Mobile
+$breakpoint-mobile-maxw: 767px;
+// Tablet
+$breakpoint-tablet-minw: 768px;
+$breakpoint-tablet-maxw: 1157px;
+// Desktop
+$breakpoint-desktop-minw: 1158px;
+/* ================== /BREAKPOINTS ================== */

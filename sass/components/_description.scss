@@ -1,6 +1,6 @@
 /* ================== DESCRIPTION ================== */
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .card-description {
         font-weight: $medium-font-weight;
@@ -10,7 +10,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
 
     .card-description {
         font-weight: $medium-font-weight;
@@ -20,7 +20,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .card-description {
         line-height: 1.5;

@@ -1,12 +1,19 @@
-/* ================== PORTFOLIO ================== */
+/* ================== PORTFOLIO HERO ================== */
+.portfolio-filter {
+    @extend %list;
+}
+
+.portfolio-list {
+    @extend %list;
+}
+
 .portfolio-hero {
     padding-top: 96px;
     padding-bottom: 120px;
 }
 
 .portfolio-filter {
-    display: flex;
-    gap: 24px;
+    @include gapFlex(24px);
     justify-content: center;
     margin-bottom: 72px;
 }
@@ -20,7 +27,7 @@
 .portfolio-card {
     flex-basis: calc((100% - 2 * 24px) / 3);
 
-    transition: box-shadow 250ms var(--timing-function);
+    transition: box-shadow 250ms $timing-function;
 }
 
 .portfolio-card-link {
@@ -33,13 +40,13 @@
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
-    transition: box-shadow 250ms var(--timing-function);
+    transition: box-shadow 250ms $timing-function;
 }
 
 .portfolio-card-text {
     padding: 32px 16px;
 
-    border: 1px solid var(--secondary-white-color);
+    border: 1px solid $secondary-white-color;
     border-top: none;
 }
 
@@ -57,7 +64,7 @@
     width: 100%;
     height: 100%;
 
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms $timing-function;
 }
 
 .portfolio-box:hover .overlay,
@@ -66,7 +73,7 @@
 .portfolio-card:focus .overlay,
 .portfolio-card-link:focus .overlay {
     transform: translateY(0);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms $timing-function;
 }
 
 .overlay {
@@ -77,19 +84,13 @@
     height: 100%;
     padding: 40px 32px;
 
-    background-color: var(--primary-brand-color);
+    background-color: $primary-brand-color;
 
     line-height: 1.5;
-    letter-spacing: var(--primary-letter-spacing);
-    color: var(--text-light-color);
+    letter-spacing: $primary-letter-spacing;
+    color: $text-light-color;
 
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms $timing-function;
     transform: translateY(100%);
 }
-/* ================== /PORTFOLIO ================== */
-
-/* ================== CONTACTS ================== */
-
-
-
-/* ================== /CONTACTS ================== */
+/* ================== /PORTFOLIO HERO ================== */

@@ -1,20 +1,23 @@
 /* ================== STUDIO ABOUT ================== */
+.studio-about-list {
+    @extend %list;
+}
+
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .about-icon-container {
         display: none;
     }
 
     .studio-about-list {
-        display: flex;
+        @include gapFlex(72px);
         flex-direction: column;
-        gap: 72px;
     }
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
 
     .studio-about {
         &-list {
@@ -34,12 +37,11 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
     
     .about-icon-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include positionFlex();
+
         width: 264px;
         height: 112px;
         flex-shrink: 0;
@@ -51,8 +53,7 @@
 
     .studio-about {
         &-list {
-            display: flex;
-            gap: 24px;
+            @include gapFlex(24px);
         }
 
         &-item {

@@ -43,9 +43,8 @@
     top: 24px;
     right: 24px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include positionFlex();
+
     padding: 0;
 
     width: 24px;

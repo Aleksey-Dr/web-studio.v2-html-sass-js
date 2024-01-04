@@ -1,6 +1,6 @@
 /* ================== STUDIO HERO ================== */
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .studio-hero {
         max-width: 767px;
@@ -33,7 +33,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
     .studio-hero {
         max-width: 1157px;
         padding-top: 112px;
@@ -65,7 +65,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .studio-hero {
         max-width: 1440px;
@@ -89,7 +89,7 @@
             margin-left: auto;
             
             text-align: center;
-            font-size: 56px;
+            font-size: 54px;
             line-height: 1.07;
             letter-spacing: $primary-letter-spacing;
             color: $white-background-color;

@@ -1,12 +1,14 @@
+// ========== UTILS
+@import "./utils/placeholders";
+@import "./utils/variables";
+@import "./utils/mixins";
+// ========== /UTILS
+
 // ========== BASE
 @import "./base/common";
 @import "./base/section";
 @import "./base/container";
 // ========== /BASE
-
-// ========== UTILS
-@import "./utils/variables";
-// ========== /UTILS
 
 // ========== COMPONENTS
 @import "./components/logotype";
@@ -25,5 +27,6 @@
 @import "./layout/studio-we-doing";
 @import "./layout/studio-team";
 @import "./layout/studio-clients";
+@import "./layout/portfolio-hero";
 @import "./layout/footer";
 // ========== /LAYOUT

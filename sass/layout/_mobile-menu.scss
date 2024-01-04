@@ -27,14 +27,15 @@
     &-content {
         display: flex;
         flex-direction: column;
-        align-items: streach;
+        align-items: stretch;
         padding: 80px 20px 40px 25px;
     }
 
     &-navigation {
-        display: flex;
+        @extend %list;
+
+        @include gapFlex(40px);
         flex-direction: column;
-        gap: 40px;
 
         .current {
             color: $pressed-state-color;

@@ -1,12 +1,18 @@
 /* ================== HEADER ================== */
-
 .header {
-
     &-page {
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
             0px 1px 1px 0px rgba(46, 47, 66, 0.16),
             0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
+}
+
+.menu {
+    @extend %list;
+}
+
+.contacts-list {
+    @extend %list;
 }
 
 /* Mobile-min */
@@ -19,9 +25,7 @@
         }
 
         &-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include positionFlex($position: space-between);
         }
     }
 
@@ -57,9 +61,8 @@
         display: none;
 
         &-list {
-            display: flex;
+            @include gapFlex(40px);
             flex-direction: column-reverse;
-            gap: 40px;
         }
 
         &-item {
@@ -88,7 +91,7 @@
 }
 
 /* Mobile */
-@media screen and (min-width: 428px) and (max-width: 767px) {
+@media screen and (min-width: 428px) and (max-width: $breakpoint-mobile-maxw) {
     .header {
         &-page {
             padding-top: 24px;
@@ -96,9 +99,7 @@
         }
 
         &-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include positionFlex($position: space-between);
         }
     }
 
@@ -133,9 +134,8 @@
         display: none;
 
         &-list {
-            display: flex;
+            @include gapFlex(40px);
             flex-direction: column-reverse;
-            gap: 40px;
         }
 
         &-item {
@@ -162,7 +162,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
     .header-container {
         display: flex;
     }
@@ -173,8 +173,7 @@
     }
 
     .menu {
-        display: flex;
-        gap: 40px;
+        @include gapFlex(40px);
 
         .current {
             color: $pressed-state-color;
@@ -222,9 +221,8 @@
         margin-left: auto;
 
         &-list {
-            display: flex;
+            @include gapFlex(12px);
             flex-direction: column;
-            gap: 12px;
             padding: 16px 0;
         }
 
@@ -259,7 +257,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
     /* Double */
     .header-container {
         display: flex;
@@ -271,8 +269,7 @@
     }
 
     .menu {
-        display: flex;
-        gap: 40px;
+        @include gapFlex(40px);
 
         .current {
             color: $pressed-state-color;
@@ -322,8 +319,7 @@
         margin-left: auto;
 
         &-list {
-            display: flex;
-            gap: 40px;
+            @include gapFlex(40px);
         }
 
         &-item {

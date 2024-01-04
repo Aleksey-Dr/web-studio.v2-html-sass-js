@@ -1,6 +1,10 @@
 /* ================== CLIENTS ================== */
+.studio-clients-list {
+    @extend %list;
+}
+
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .studio-clients {
         &-list {
@@ -15,9 +19,8 @@
         }
 
         &-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include positionFlex();
+
             width: 100%;
             height: 100%;
 
@@ -37,7 +40,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
 
     .studio-clients {
         &-list {
@@ -53,9 +56,8 @@
         }
 
         &-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include positionFlex();
+
             width: 100%;
             height: 100%;
 
@@ -75,12 +77,11 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .studio-clients {
         &-list {
-            display: flex;
-            gap: 24px;
+            @include gapFlex(24px);
         }
 
         &-item {
@@ -89,9 +90,8 @@
         }
 
         &-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include positionFlex();
+
             width: 100%;
             height: 100%;
 

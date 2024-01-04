@@ -1,6 +1,10 @@
 /* ================== STUDIO DOING ================== */
+.studio-doing-list {
+    @extend %list;
+}
+
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .studio-doing {
         display: none;
@@ -8,7 +12,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
 
     .studio-doing {
         display: none;
@@ -16,14 +20,13 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: $breakpoint-desktop-minw) {
 
     .studio-doing {
         padding-bottom: 120px;
 
         &-list {
-            display: flex;
-            gap: 24px;
+            @include gapFlex(24px);
         }
 
         &-item {
