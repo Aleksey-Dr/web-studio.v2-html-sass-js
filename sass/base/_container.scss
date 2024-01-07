@@ -1,13 +1,16 @@
 /* ================== CONTAINER ================== */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Mobile */
 @media screen and (max-width: $breakpoint-mobile-maxw) {
 
     .container {
         max-width: 428px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-left: auto;
-        margin-right: auto;
     }
         
 }
@@ -16,12 +19,6 @@
 @media screen and (min-width: $breakpoint-tablet-minw) and (max-width: $breakpoint-tablet-maxw) {
     .container {
         width: $breakpoint-tablet-minw;
-        /* Double */
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        /* /Double */
     }
 }
 
@@ -29,12 +26,6 @@
 @media screen and (min-width: $breakpoint-desktop-minw) {
     .container {
         width: $breakpoint-desktop-minw;
-        /* Double */
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        /* /Double */
     }
 }
 /* ================== /CONTAINER ================== */

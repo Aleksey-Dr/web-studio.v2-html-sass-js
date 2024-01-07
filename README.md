@@ -11,7 +11,7 @@ ___
 Install the [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) extension to work with [Sass](https://sass-lang.com/).
 
 > [!TIP]
-> Base settings for Live Sass Compiler (json)
+> Base settings for Live Sass Compiler (json):
 
 ```
 "liveSassCompile.settings.formats": [
